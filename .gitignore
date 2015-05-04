@@ -33,3 +33,6 @@ themes/*/magento/skin/default/common
 **/*.map
 **/node_modules/*
 platforms/**/cache
+
+# own
+_tmp/*
