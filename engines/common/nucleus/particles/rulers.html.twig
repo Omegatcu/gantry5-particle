@@ -1,0 +1,16 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block stylesheets %}
+    <link href="{{ url('gantry-engine://media/css/rulersguides.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block javascript %}
+    <script type="text/javascript" src="https://rawgithub.com/mark-rolich/Event.js/master/Event.js"></script>
+    <script type="text/javascript" src="https://rawgithub.com/mark-rolich/Dragdrop.js/master/Dragdrop.js"></script>
+    <script src="{{ url('gantry-engine://media/js/RulersGuides.js') }}"></script>
+    <script type="text/javascript">
+        var evt         = new Event(),
+                dragdrop    = new Dragdrop(evt),
+                rg          = new RulersGuides(evt, dragdrop);
+    </script>
+{% endblock %}

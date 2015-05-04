@@ -1,0 +1,21 @@
+name: Piwik Analytics
+description: Configure Piwik Analytics.
+type: atom
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable analytic particles.
+      default: false
+
+    ac.a:
+      type: input.text
+      description: Enter the Piwik Analytics tracking URL.
+      label: Piwik Analytics URL
+
+    ac.b:
+      type: input.text
+      description: Enter the Site ID from Piwik Analytics.
+      label: Piwik Analytics ID

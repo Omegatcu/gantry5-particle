@@ -1,0 +1,11 @@
+name: Yootheme UIKit
+description: Integrates UIKit files from CDN
+type: atom
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the atom.
+      default: true

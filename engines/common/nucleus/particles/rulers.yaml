@@ -1,0 +1,11 @@
+name: Rulers Guides
+description: Integrates RulersGuides.js for Design developement
+type: atom
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the atom.
+      default: true

@@ -1,0 +1,11 @@
+name: Bootstrap 3
+description: Integrates Bootstrap 3 files from Bootstrap CDN
+type: atom
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the atom.
+      default: true

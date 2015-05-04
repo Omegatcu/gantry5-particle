@@ -1,0 +1,17 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block javascript %}
+    {{ parent() }}
+{% if particle.piwik.site  %}
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        (function(){ var u=(("https:" == document.location.protocol) ? "https://{{ particle.piwik.site|raw }}/" : "http://{{ particle.piwik.site|raw }}/");
+            _paq.push(['setSiteId', '{{ particle.piwik.id }}' ]);
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.defer=true; g.async=true; g.src=u+'piwik.js';
+            s.parentNode.insertBefore(g,s); })();
+    </script>
+{% endif %}
+{% endblock %}
