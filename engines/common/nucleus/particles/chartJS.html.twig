@@ -1,0 +1,6 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block javascript %}
+    {{ parent() }}
+    <script src="{{ url('gantry-engine://media/js/chart.js') }}"></script>
+{% endblock %}
